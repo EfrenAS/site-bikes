@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carga de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Carga de Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
+    <!-- Carga CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Carga JS -->
+    <script src="JavaScript/vistaPassword.js"></script>
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <img src="img/Logo.jpg" alt="">
+        </div>
+        <div class="login-right">
+            <!-- Contenido de la parte derecha (40%) -->
+            <h2>CREAR UNA CUENTA</h2>
+            <h3>EMPECEMOS</h3>
+            <form method="post" action="procesar-login.php">
+
+                <label for="nombres">Nombre</label>
+                <input class="control" type="text" name="nombres" required><br>
+
+                <label for="apellidos">Apellidos</label>
+                <input class="control" type="text" name="apellidos" required><br>
+
+                <label for="Tu-email">Email</label>
+                <input class="control" type="email" name="Tu-email" required><br>
+
+                <label for="Tu-contraseña">Contraseña</label>
+                <div class="password-input">
+                    <input class="control" type="password" name="Tu-contraseña" id="password" required>
+                    <i class="password-toggle-icon" onclick="togglePasswordVisibility()"></i>
+                </div>
+                <div id="passwordToggleText"></div>
+
+                <!-- <div class="remember-forgot">
+                    <input class="control1" type="checkbox" id="recuerdoContraseña">
+                    <label class="checkbox-label" for="recuerdoContraseña">Recordar Contraseña</label>
+                    <a href="#">¿Haz olvidado tu Contraseña?</a>
+                </div> -->
+
+                <input class="boton1" type="submit" value="Registrarse"><br>
+                <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesion</a></p>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>

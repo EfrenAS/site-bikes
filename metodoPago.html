@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Carga de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Carga de Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/medotoPago.css">
+    <script src="JavaScript/carrito.js"></script>
+    <title>Formulario de Pago</title>
+</head>
+<body>
+    <div class="container">
+        <a href="carrito.html"><i class="fas fa-arrow-left"></i></a>
+        <div class="tituloPago">
+            <h2>Compra mas rapido y seguro</h2>
+            <h4>Para continuar con su compra ingrese sus datos</h4>     
+        </div>
+
+        <div class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="formulario">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="formulario">
+            <label for="dni">Nro DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div class="formulario">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="formulario">
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento" required>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Áncash">Áncash</option>
+                <option value="Apurímac">Apurímac</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Ayacucho">Ayacucho</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Callao">Callao</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Huancavelica">Huancavelica</option>
+                <option value="Huánuco">Huánuco</option>
+                <option value="Ica">Ica</option>
+                <option value="Junín">Junín</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Lima">Lima</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Madre de Dios">Madre de Dios</option>
+                <option value="Moquegua">Moquegua</option>
+                <option value="Pasco">Pasco</option>
+                <option value="Piura">Piura</option>
+                <option value="Puno">Puno</option>
+                <option value="San Martín">San Martín</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Tumbes">Tumbes</option>
+                <option value="Ucayali">Ucayali</option>
+            </select>
+        </div>
+
+        <div class="formulario">
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" required>
+        </div>
+
+        <div class="formulario direccion">
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="metodoPago">
+            <h4>Seleccionar Método de pago</h4>
+            <div class="iconosMetodoPago">
+                <i class="fab fa-cc-visa iconoMetodo"></i>
+                <i class="fab fa-cc-mastercard iconoMetodo"></i>
+                <i class="fab fa-cc-paypal iconoMetodo"></i>
+            </div>
+        </div>
+
+        <div class="botonpagar">
+            <button id="pagarBtn" onclick="pagar()">Pagar</button> 
+        </div>
+    </div>
+</body>
+</html>

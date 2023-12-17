@@ -1,0 +1,362 @@
+:root{
+    --azul: #004AAD;
+    --blanco: #fff;
+    --negro: #212121;
+    --gris: #ccc;
+    --naranja: #eb5a07;
+}
+
+
+* {
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.inicio-sesion {
+    text-align: right;
+}
+
+.login-button, .register-button {
+    padding: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Estilos adicionales según tus preferencias */
+.login-button {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 2px solid var(--negro);
+    border-radius: 5px;
+}
+
+
+.login-button:hover{
+    border: 2px solid var(--azul);
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+/* Estilos adicionales para los iconos */
+.fa-sign-in-alt, .fa-user-plus {
+    margin-right: 6px;
+}
+
+/*SECCION IZQUIERDA DE LA PAGINA*/
+
+.left-section {
+    position: fixed;
+    width: 13%;
+    float: left;
+    margin: 20px;
+    /*border: 2px solid red;*/
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 130px;
+}
+
+.menu {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    font-weight: bold;
+    list-style: none;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid var(--gris);
+}
+
+.menu li {
+    margin-bottom: 10px;
+    padding:10px 0;
+}
+
+.menu ul li i{
+    margin-right: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li a.active{
+    color: var(--azul);
+    /*border-right: 2px solid var(--azul);*/
+}
+
+.menu ul li a:hover{
+    color: var(--azul);
+    border-right: 2px solid var(--azul);
+    
+}
+
+.social-media {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.social-media h3 {
+    color: var(--naranja);
+}
+/*CONTENIDO PRINCIPAL*/
+
+/* ... tu código anterior ... */
+
+.main-content {
+    width: 82%;
+    float: right;
+    margin: 0 auto;
+    padding: 20px;
+    /*border: 2px solid blue;*/
+}
+
+/* Estilos adicionales para la sección "Inicio" */
+
+.inicio {
+    margin-bottom: 40px;
+    background-image: url("../img/inicio.png");
+    border-radius: 17px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido-inicio {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-inicio h2 {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 190px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--gris);
+    color: var(--negro);
+    padding: 15px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+@keyframes animacionBienvenida {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.animacion-bienvenida {
+    animation: animacionBienvenida 2s ease-in-out;
+}
+
+
+
+/* Estilos adicionales para la sección "Servicios Principales" */
+
+.serviciosPrincipales {
+    margin-top: 60px;
+    text-align: center;
+    color: var(--azul);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.seccionServicioPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.SP {
+    width: 300px; 
+    margin: 18px;
+}
+
+.imagenSP {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--azul);
+}
+
+.textoSP {
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--azul);
+}
+
+.titutloSP {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.descripcionSP {
+    max-width: 60%;
+    font-size: 18px;;
+    font-weight: 400;
+    color: var(--negro);
+    text-align: center;
+    margin: 0 auto
+}
+
+/* ... tu código de Ubicacion ... */
+
+.containerUbicacion {
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+iframe {
+    width: 100%;   
+}
+
+.descripcion {
+    width: 100%;
+    margin-top: 130px;
+    max-width: 400px;
+    line-height: 30px;
+}
+
+h3 {
+    color: var(--azul);
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* Estilos Pie de Pagina*/
+footer{
+    background-color: var(--negro);
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.piePagina {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.CajaFooter {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.titleFooter{
+    color: var(--blanco);
+    text-align: center;
+    margin: 5px;
+}
+
+.descrFooter{
+    color: var(--gris);
+    margin: 5px;
+    padding: 8px;
+    line-height: 35px; /*interlineado*/
+}
+
+.redesPie{
+    color: var(--blanco);
+    margin-top: 21px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.redesPie a:hover{
+    color: var(--blanco);
+}
+
+.Logo-piePagina img{
+    display: block;
+    max-width: 200px;
+    height: auto;
+}
+
+.mediosPago{
+    max-width: 25%;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.termPoliticas p{
+    margin-top: 15px;
+    color: var(--blanco);
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Estilos para tablet */
+@media (min-width: 768px) {
+    .contenido-inicio h2 {
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        font-size: 140px;
+    }
+
+    .CajaFooter {
+        width: 48%; 
+    }
+}
+
+/* Estilos para computadora */
+@media (min-width: 1024px) {
+    .CajaFooter {
+        width: 22%; 
+    }
+}

@@ -1,0 +1,98 @@
+:root{
+    --azul: #004AAD;
+    --blanco: #fff;
+    --negro: #212121;
+    --gris: #ccc;
+}
+
+*{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorServicioTecnico {
+    width: 82%;
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#servicioTecnico {
+    color: var(--azul);
+    margin: 50px;
+}
+
+.seccionST {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ST {
+    width: calc(30% - 40px);
+    margin: 5px;
+    border: 2.5px solid var(--azul);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+
+.textoST {
+    text-align: center;
+}
+
+h3 {
+    color: var(--azul);
+}
+
+.precioRojo {
+    color: red;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+.centrarBoton {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.agendarServicio {
+    background-color: var(--negro);
+    color: var(--blanco);
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.agendarServicio:hover {
+    background-color: var(--azul);
+}
+
+/*celulares*/
+@media only screen and (max-width: 600px) {
+    .ST {
+        width: calc(100% - 40px);
+    }
+}
+
+/*tablets*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .ST {
+        width: calc(48% - 40px);
+    }
+}
+
+/*computadora*/
+@media only screen and (min-width: 1025px) {
+    .ST {
+        width: calc(30% - 40px);
+    }
+}

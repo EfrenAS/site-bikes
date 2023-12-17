@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carga de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Carga de Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/carr.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Carfa JS -->
+    <script src="JavaScript/carrito.js"></script>
+    <title>Carrito de Compras</title>
+    
+</head>
+<body>
+
+    <header>
+        <div class="inicio-sesion">
+            <a href="nuevoUsuario.html"><button class="login-button"><i class="fas fa-user-plus"></i>Registrarse</button></a>
+            <a href="login.html"><button class="login-button"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</button></a>
+        </div>
+        <div class="left-section">
+            <div class="logo"><img src="img/Logo.jpg" alt="Logo Dolamar Bikes" ></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                    <li><a href="tienda.html"><i class="fas fa-store"></i>Tienda</a></li>
+                    <li><a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a></li>
+                    <li><a href="acercade.html"><i class="fas fa-info-circle"></i>Acerca de</a></li>
+                    <!-- <li><a href="#"><i class="fas fa-shopping-cart"></i>Carrito</a></li> -->
+                    <li><a class="active" href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</li>
+                  </ul>
+            </nav>
+            <div class="social-media menu">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/DolmarBike" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="carrito">
+        <div class="titCarr">
+            <h1>Carrito de Compras</h1>
+            <hr>
+        </div>
+        <h2>Productos en el Carrito</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="listaCarrito"></tbody>
+        </table>
+
+        <p id="total"></p>
+        <p>Productos en el carrito: <span id="contador"></span></p>
+
+        <button class="paga" id="pagarBtn" onclick="pagar()"><a href="metodoPago.html">Ir a Metodo de Pago</a></button>
+
+    </section>
+</body>
+</html>

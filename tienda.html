@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carga de Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Carga de Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/verProductos.js"></script>
+    <title>Tienda</title>
+</head>
+<body>
+    <header>
+        <div class="inicio-sesion">
+            <a href="nuevoUsuario.html"><button class="login-button"><i class="fas fa-user-plus"></i>Registrarse</button></a>
+            <a href="login.html"><button class="login-button"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</button></a>
+        </div>
+        <div class="left-section">
+            <div class="logo"><img src="img/Logo.jpg" alt="Logo Dolamar Bikes" ></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                    <li><a class="active" href="tienda.html"><i class="fas fa-store"></i>Tienda</a></li>
+                    <li><a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a></li>
+                    <li><a href="acercade.html"><i class="fas fa-info-circle"></i>Acerca de</a></li>
+                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
+                  </ul>
+            </nav>
+            <div class="social-media menu">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/DolmarBike" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="containerServiciosP">
+        <div class="Categorias">
+            <h1 class="tituloTienda">BICICLETAS MOTAÑERAS</h1> 
+            <input type="button" id="btn1" value="Ver Mas" onclick="mostrarProductos()"> <!--boton ver mas-->
+        </div>
+        <section class="bicicletasMotañeras">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Montañera/M1.jpeg">
+                </div>
+                <div class="textSP">
+                    <h2>MSL Urbana 27.5</h2>
+                    <h3>Bicicleta MTB</h3>
+                    <p>S/.750</p>
+                    <button onclick="agregarAlCarrito('MSL Urbana 27.5', 750, 'img/B-Montañera/M1.jpeg')">Añadir al Carrito</button>
+                    
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Montañera/M2.jpeg">
+                </div>
+                <div class="textSP">
+                    <h2>Rockrider Urbana 29</h2>
+                    <h3>Bicicleta MTB</h3>
+                    <p>S/.1500</p>
+                    <button onclick="agregarAlCarrito('Rockrider Urbana 29', 1500, 'img/B-Montañera/M2.jpeg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Montañera/M3.jpeg">
+                </div>
+                <div class="textSP">
+                    <h2>Merida Deportiva 26</h2>
+                    <h3>Bicicleta MTB</h3>
+                    <p>S/.2500</p>
+                    <button onclick="agregarAlCarrito('Merida Deportiva 26', 2500, 'img/B-Montañera/M3.jpeg')">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- div para mostrar los demas productos -->
+            <div id="productosAdicionales" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M4.jpeg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Cross Deportiva 29 </h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.700</p>
+                        <button onclick="agregarAlCarrito('Cross Deportiva 29', 700, 'img/B-Montañera/M4.jpeg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M5.jpeg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Supreme Deportiva 27.5</h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.4100</p>
+                        <button onclick="agregarAlCarrito('Supreme Deportiva 27.5', 4100, 'img/B-Montañera/M5.jpeg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M6.jpeg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Premier Urbana 29</h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.2000</p>
+                        <button onclick="agregarAlCarrito('Premier Urbana 29', 2000, 'img/B-Montañera/M6.jpeg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M7.png">
+                    </div>
+                    <div class="textSP">
+                        <h2>Premier Deportiva 29</h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.3500</p>
+                        <button onclick="agregarAlCarrito('Premier Deportiva 29', 3500, 'img/B-Montañera/M7.png')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M8.jpeg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Trek Deportiva 29</h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.1800</p>
+                        <button onclick="agregarAlCarrito('Trek Deportiva 29', 1800, 'img/B-Montañera/M8.jpeg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Montañera/M9.jpeg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Stark Deportiva 29 </h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.950</p>
+                        <button onclick="agregarAlCarrito('Stark Deportiva 29', 950, 'img/B-Montañera/M9.jpeg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION BICICLETAS PARA NIÑOS -->
+        <div class="Categorias">
+            <h1 class="tituloTienda">BICICLETAS PARA NIÑOS</h1> 
+            <input type="button" id="btn2" value="Ver Mas" onclick="mostrarProductos2()"> <!--boton ver mas-->
+        </div>
+        <section class="bicicletasNiños">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Niños/B1.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Schwinn 12</h2>
+                    <h3>Bicicleta Niños</h3>
+                    <p>S/.350</p>
+                    <button onclick="agregarAlCarrito('Schwinn 12', 350, 'img/B-Niños/B1.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Niños/B2.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Raleigh 12</h2>
+                    <h3>Bicicleta Niños</h3>
+                    <p>S/.370</p>
+                    <button onclick="agregarAlCarrito('Raleigh 12', 370, 'img/B-Niños/B2.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Niños/B3.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Strider 12</h2>
+                    <h3>Bicicleta Niños</h3>
+                    <p>S/.250</p>
+                    <button onclick="agregarAlCarrito('Strider 12', 250, 'img/B-Niños/B3.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <!-- div para mostrar los demas productos -->
+            <div id="productosAdicionales2" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/4.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Guardian 16</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.480</p>
+                        <button onclick="agregarAlCarrito('Guardian 16', 480, 'img/B-Niños/B4.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/B5.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Giant 16</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.380</p>
+                        <button onclick="agregarAlCarrito('Giant 16', 380, 'img/B-Niños/B5.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/B6.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Islabikes 16</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.280</p>
+                        <button onclick="agregarAlCarrito('Islabikes 16', 280, 'img/B-Niños/B6.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/B7.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Besatti 12</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.250</p>
+                        <button onclick="agregarAlCarrito('Besatti 12', 250, 'img/B-Niños/B7.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/B8.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Premier 20</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.370</p>
+                        <button onclick="agregarAlCarrito('Besatti 12', 370, 'img/B-Niños/B8.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Niños/B9.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Monark 12</h2>
+                        <h3>Bicicleta Niños</h3>
+                        <p>S/.360</p>
+                        <button onclick="agregarAlCarrito('Monark 12', 360, 'img/B-Niños/B9.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+
+        <!-- SECCION BICICLETAS PARA PASEO -->
+        <div class="Categorias">
+            <h1 class="tituloTienda">BICICLETAS PARA PASEO</h1> 
+            <input type="button" id="btn3" value="Ver Mas" onclick="mostrarProductos3()"> <!--boton ver mas-->
+        </div>
+        <section class="bicicletasPaseo">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Paseo/P1.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Jafi Pistera 29</h2>
+                    <h3>Bicicleta Paseo</h3>
+                    <p>S/.900</p>
+                    <button onclick="agregarAlCarrito('Jafi Pistera 29', 900, 'img/B-Paseo/P1.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Paseo/P2.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Monark 26</h2>
+                    <h3>Bicicleta Paseo</h3>
+                    <p>S/.880</p>
+                    <button onclick="agregarAlCarrito('Monark 26', 880, 'img/B-Paseo/P2.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Paseo/P3.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Jafi Pistera 29</h2>
+                    <h3>Bicicleta Paseo</h3>
+                    <p>S/.800</p>
+                    <button onclick="agregarAlCarrito('Jafi Pistera 29', 800, 'img/B-Paseo/P3.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- div para mostrar los demas productos -->
+
+            <div id="productosAdicionales3" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P4.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Diamond Deportiva 26</h2>
+                        <h3>Bicicleta Paseo</h3>
+                        <p>S/.750</p>
+                        <button onclick="agregarAlCarrito('Diamond Deportiva 26', 750, 'img/B-Paseo/P4.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P10.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Cross Campera 26</h2>
+                        <h3>Bicicleta Paseo</h3>
+                        <p>S/.490</p>
+                        <button onclick="agregarAlCarrito('Cross Campera 26', 490, 'img/B-Paseo/P10.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P6.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Monarette Campera 24</h2>
+                        <h3>Bicicleta Paseo</h3>
+                        <p>S/.500</p>
+                        <button onclick="agregarAlCarrito('Monarette Campera 24', 500, 'img/B-Paseo/P6.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P7.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Croos Campera 24</h2>
+                        <h3>Bicicleta Paseo</h3>
+                        <p>S/.520</p>
+                        <button onclick="agregarAlCarrito('Croos Campera 24', 520, 'img/B-Paseo/P7.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P8.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Oxford Campera 26</h2>
+                        <h3>Triciclo Paseo</h3>
+                        <p>S/.780</p>
+                        <button onclick="agregarAlCarrito('Oxford Campera 26', 520, 'img/B-Paseo/P8.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Paseo/P9.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Premier Campera 26</h2>
+                        <h3>Bicicleta Paseo</h3>
+                        <p>S/.540</p>
+                        <button onclick="agregarAlCarrito('PremierCampera 26', 520, 'img/B-Paseo/P9.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- SECCION BICICLETAS PARA RUTA -->
+        <div class="Categorias">
+            <h1 class="tituloTienda">BICICLETAS PARA RUTA</h1> 
+            <input type="button" id="btn4" value="Ver Mas" onclick="mostrarProductos4()"> <!--boton ver mas-->
+        </div>
+        <section class="bicicletasRuta">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Ruta/R1.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Trinx Rutera 29</h2>
+                    <h3>Bicicleta Ruta</h3>
+                    <p>S/.950</p>
+                    <button onclick="agregarAlCarrito('Trinx Rutera 29', 950, 'img/B-Ruta/R1.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Ruta/R2.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Sumpeed Rutera 29</h2>
+                    <h3>Bicicleta Ruta</h3>
+                    <p>S/.1400</p>
+                    <button onclick="agregarAlCarrito('Sumpeed Rutera 29', 1400, 'img/B-Ruta/R2.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/B-Ruta/R3.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Zafiro Rutera 29</h2>
+                    <h3>Bicicleta Ruta</h3>
+                    <p>S/.780</p>
+                    <button onclick="agregarAlCarrito('Zafiro Rutera 29', 760, 'img/B-Ruta/R3.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <!-- div para mostrar los demas productos -->
+            <div id="productosAdicionales4" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R4.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Cross Deportiva 29 </h2>
+                        <h3>Bicicleta Ruta</h3>
+                        <p>S/.880</p>
+                        <button onclick="agregarAlCarrito('Cross Deportiva 29', 800, 'img/B-Ruta/R4.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R5.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Supreme Rutera 29</h2>
+                        <h3>Bicicleta Ruta</h3>
+                        <p>S/.2500</p>
+                        <button onclick="agregarAlCarrito('Supreme Rutera 29', 2500, 'img/B-Ruta/R5.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R6.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Trek Rutera 28</h2>
+                        <h3>Bicicleta MTB</h3>
+                        <p>S/.1500</p>
+                        <button onclick="agregarAlCarrito('Trek Rutera 28', 1500, 'img/B-Ruta/R6.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R7.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Trek Rutera 27.5</h2>
+                        <h3>Bicicleta Ruta</h3>
+                        <p>S/.4500</p>
+                        <button onclick="agregarAlCarrito('Trek Rutera 27.5', 4500, 'img/B-Ruta/R7.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R8.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Oxford Rutera 29</h2>
+                        <h3>Bicicleta Ruta</h3>
+                        <p>S/.2500</p>
+                        <button onclick="agregarAlCarrito('Oxford Rutera 29', 2500, 'img/B-Ruta/R8.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/B-Ruta/R9.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Sava Rutera 29</h2>
+                        <h3>Bicicleta Ruta</h3>
+                        <p>S/.4200</p>
+                        <button onclick="agregarAlCarrito('Sava Rutera 29', 4200, 'img/B-Ruta/R9.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION COMPONENTES DE BICICLETA -->
+        <div class="Categorias">
+            <h1 class="tituloTienda">ACCESORIOS DE BICICLETAS</h1> 
+            <input type="button" id="btn5" value="Ver Mas" onclick="mostrarProductos5()"> <!--boton ver mas-->
+        </div>
+        <section class="componentesBicicleta">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Accesorios/A1.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Asiento Jafi</h2>
+                    <h3>Accesorio Bicicleta</h3>
+                    <p>S/.70</p>
+                    <button onclick="agregarAlCarrito('Asiento Jafi', 70, 'img/Accesorios/A1.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Accesorios/A2.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Casco Giant</h2>
+                    <h3>Accesorio Bicicleta</h3>
+                    <p>S/.250</p>
+                    <button onclick="agregarAlCarrito('Casco Giant', 250, 'img/Accesorios/A2.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Accesorios/A3.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Casco Biflex</h2>
+                    <h3>Accesorio Bicicleta</h3>
+                    <p>S/.70</p>
+                    <button onclick="agregarAlCarrito('Casco Biflex', 70, 'img/Accesorios/A3.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <!-- div para mostrar los demas productos -->
+            <div id="productosAdicionales5" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A4.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Descarrilador Sram</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.280</p>
+                        <button onclick="agregarAlCarrito('Descarrilador Sram', 280, 'img/Accesorios/A4.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A5.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Catalina SUK</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.120</p>
+                        <button onclick="agregarAlCarrito('Catalina SUK', 120, 'img/Accesorios/A5.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A6.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Luz Delantera</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.65</p>
+                        <button onclick="agregarAlCarrito('Luz Delantera', 65, 'img/Accesorios/A6.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A7.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Frenos Alonga</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.90</p>
+                        <button onclick="agregarAlCarrito('Frenos Alonga', 90, 'img/Accesorios/A7.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A8.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Piñon Shimano</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.300</p>
+                        <button onclick="agregarAlCarrito('Piñon Shimano', 300, 'img/Accesorios/A8.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Accesorios/A9.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Disco Shimano</h2>
+                        <h3>Accesorio Bicicleta</h3>
+                        <p>S/.180</p>
+                        <button onclick="agregarAlCarrito('Disco Shimano', 180, 'img/Accesorios/A9.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- SECCION ACCESORIOS DE CICLISTA -->
+        <div class="Categorias">
+            <h1 class="tituloTienda">ACCESORIOS DE CICLISTA</h1> 
+            <input type="button" id="btn6" value="Ver Mas" onclick="mostrarProductos6()"> <!--boton ver mas-->
+        </div>
+        <section class="accesoriosCiclista">
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Ac-Ciclista/AC1.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Lentes Polarizado</h2>
+                    <h3>Accesorio Ciclista</h3>
+                    <p>S/.110</p>
+                    <button onclick="agregarAlCarrito('Lentes Polarizado', 110, 'img/Ac-Ciclista/AC1.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Ac-Ciclista/AC2.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Casco Kekan</h2>
+                    <h3>Accesorio Ciclista</h3>
+                    <p>S/.85</p>
+                    <button onclick="agregarAlCarrito('Casco Kekan', 85, 'img/Ac-Ciclista/AC2.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="SP">
+                <div class="contenedor-img">
+                    <img class="imgSP" src="img/Ac-Ciclista/AC3.jpg">
+                </div>
+                <div class="textSP">
+                    <h2>Uniforme Gobik</h2>
+                    <h3>Accesorio Ciclista</h3>
+                    <p>S/.150</p>
+                    <button onclick="agregarAlCarrito('Uniforme Gobik', 150, 'img/Ac-Ciclista/AC3.jpg')">Añadir al Carrito</button>
+                </div>
+            </div>
+            <!-- div para mostrar los demas productos -->
+            <div id="productosAdicionales6" class="JS bicicletasMotañeras">
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC4.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Uniforme Sram</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.160</p>
+                        <button onclick="agregarAlCarrito('Uniforme Sram', 160, 'img/Ac-Ciclista/AC4.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC5.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Uniforme Neos</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.130</p>
+                        <button onclick="agregarAlCarrito('Uniforme Neos', 130, 'img/Ac-Ciclista/AC5.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC6.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Zapatillas Luck</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.350</p>
+                        <button onclick="agregarAlCarrito('Zapatillas Luck', 350, 'img/Ac-Ciclista/AC6.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC7.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Zapatillas Sphyre</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.320</p>
+                        <button onclick="agregarAlCarrito('Zapatillas Sphyre', 320, 'img/Ac-Ciclista/AC7.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC8.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Guantes Giro</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.65</p>
+                        <button onclick="agregarAlCarrito('Guantes Giro', 65, 'img/Ac-Ciclista/AC8.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="SP">
+                    <div class="contenedor-img">
+                        <img class="imgSP" src="img/Ac-Ciclista/AC9.jpg">
+                    </div>
+                    <div class="textSP">
+                        <h2>Guantes MG</h2>
+                        <h3>Accesorio Ciclista</h3>
+                        <p>S/.70</p>
+                        <button onclick="agregarAlCarrito('Guantes MG', 70, 'img/Ac-Ciclista/AC9.jpg')">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div> 
+            
+
+            <!-- Agrega esto donde quieras que aparezca la previsualización -->
+            <div id="imagenPrevisualizacion" class="previsualizacion">
+                <div id="detalleProducto" class="detalleProducto">
+                    <span class="cerrar" onclick="cerrarDetalleProducto()">&times;</span>
+                    <div class="contenedor-img">
+                        <img id="imagenDetalle" class="imgSP" src="">
+                    </div>
+                        <div class="textSP" id="detalleTexto">
+                        <h2></h2>
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

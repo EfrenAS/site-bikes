@@ -1,0 +1,189 @@
+:root{
+    --azul: #004AAD;
+    --blanco: #fff;
+    --negro: #212121;
+    --gris: #ccc;
+    --grisClaro: #2e2a2a; /*para h3 solo en tienda*/
+}
+
+
+/*agreado recion solo lo del carrito */
+
+* {
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerServiciosP {
+    width: 82%;
+    float: right;
+    margin: 0 auto;
+}
+
+.Categorias{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tituloTienda {
+    text-align: center;
+    margin: 20px;
+    color: var(--azul)
+}
+
+.bicicletasMotañeras, .bicicletasNiños, .bicicletasPaseo, .bicicletasRuta,.componentesBicicleta, .accesoriosCiclista, .JS{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.SP {
+    width: 30%;/* Corregirr*/
+    margin: 10px;
+    border: 3px solid var(--gris);
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 430px;
+}
+
+.imgSP {
+    max-width: 100%;
+    height: auto;
+}
+
+.textSP {
+    max-width: 400px;
+    text-align: center;
+    margin: 8px 10px;
+}
+
+/*====================================*/
+.textSP h2{
+    color: var(--negro);
+    margin-bottom: 0;
+    font-size: 25px;
+    /*margin-top: -10%;*/
+}
+
+.textSP h3{
+    color: var(--grisClaro);
+    margin: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.textSP button{
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.textSP button:hover{
+    background-color: var(--azul);    
+}
+
+.contenedor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+
+}
+
+.imgSP {
+    max-width: 90%;
+    max-height: 90%;
+    align-items: center;
+}
+
+.imgSP:hover {
+    transform: scale(.9); 
+}
+
+.textSP p{
+    display:flow-root;
+    font-size: 25px;
+    color: var(--azul);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6{
+    border: none;
+    background-color: var(--negro);
+    color: var(--blanco);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.JS {
+    display: none;
+}
+
+/* Media queries for tablet screens */
+@media (max-width: 768px) {
+    .SP {
+        width: 48%; /* Adjust as needed */
+    }
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 480px) {
+    .SP {
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Agrega esto al final de tu archivo de estilo CSS */
+.previsualizacion {
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detalleProducto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Nuevos estilos para centrar en la pantalla */
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center; /* Alinea el contenido al centro */
+    position:relative;
+    top: 50%;
+    left: 50%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--azul);
+    font-size: 40px;
+    font-weight: bold;
+}
+

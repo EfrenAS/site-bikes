@@ -1,0 +1,67 @@
+:root{
+    --azul: #004AAD;
+    --blanco: #fff;
+    --negro: #212121;
+    --gris: #ccc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+.contenedorAcercaDe {
+    width: 82%;
+    float: right;
+    margin:  0 auto;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--azul);
+    font-size: 30px;
+    margin: 42px;
+}
+
+.seccionAcercaDe {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.AD{
+    width: 30%;
+    text-align: center;
+}
+
+.AD img {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 15px;
+}
+
+.imagenAD {
+    width: 100%;
+    height: 100%;
+}
+
+.textoAD {
+    max-width: 100%;
+    padding: 10px;
+    color: var(--azul);
+}
+
+.tituloAD {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.descripcionAD {
+    font-size: 18px;
+    color: var(--negro);
+    text-align: justify;
+}

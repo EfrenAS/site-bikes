@@ -1,0 +1,116 @@
+:root{
+    --azul: #004AAD;
+    --blanco: #fff;
+    --negro: #212121;
+    --gris: #ccc;
+    --naranja: #eb5a07;
+}
+  
+  *{
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .login-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 140px auto;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px #000;
+    height: 600px;
+  }
+  
+  .login-left {
+    background-color: var(--blanco);
+    flex: 60%;
+    padding: 20px;
+    border: 2px solid var(--azul);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-right {
+    background-color: var(--azul);
+    color: var(--blanco);
+    flex: 40%;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+  }
+  
+  .tituloLogin {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  h3{
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label, p{
+    font-size: 12px;
+  }
+  
+  p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .control{
+    width: 310px;
+    font-weight: bold;
+    color: var(--blanco);
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: border-box;
+  }
+  
+  .boton1 {
+    background-color: var(--blanco); /* Color del botón de inicio de sesión */
+    color: var(--negro);
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin: 20px;
+  }
+
+  .boton1:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  
+  a {
+    color: var(--naranja); /* Color del enlace de registro */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
