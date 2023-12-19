@@ -16,9 +16,14 @@
 }
 
 .containerServiciosP {
-    width: 82%;
     float: right;
     margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+    .containerServiciosP {
+        width: 82%;
+    }
 }
 
 .Categorias{
@@ -46,7 +51,7 @@
     padding: 10px;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 430px;
+    /* height: 430px;  Verificar, lo comento porque si no el boton Anadir al carrito sale de contenedor */
 }
 
 .imgSP {

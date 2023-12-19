@@ -16,6 +16,7 @@
   
   .login-container {
     display: flex;
+    flex-direction: column;
     max-width: 1100px;
     margin: 140px auto;
     border-radius: 20px;
@@ -23,31 +24,53 @@
     height: 600px;
   }
   
+  @media (min-width: 992px) {
+    .login-container {
+      flex-direction: row;
+    }
+  }
+
   .login-left {
     background-color: var(--blanco);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     flex: 60%;
     padding: 20px;
     border: 2px solid var(--azul);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  
+  @media(min-width: 992px) {
+    .login-left {
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 0px;
+    }
+  }
+
+
   .login-right {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: var(--azul);
     color: var(--blanco);
     flex: 40%;
     padding: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centra verticalmente */
     align-items: center;
   }
   
+  @media(min-width: 992px) { 
+    .login-right {
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
   .tituloLogin {
     margin-bottom: 20px;
     text-align: center;

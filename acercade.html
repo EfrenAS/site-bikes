@@ -1,75 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Carga de Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Carga de Fonts Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/acercade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/acercade.css" />
+    <link rel="stylesheet" href="css/menu-toggle.css" />
     <title>AcercaDe</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="inicio-sesion">
-            <a href="nuevoUsuario.html"><button class="login-button"><i class="fas fa-user-plus"></i>Registrarse</button></a>
-            <a href="login.html"><button class="login-button"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</button></a>
+      <div class="menu-toggle">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+      <div class="inicio-sesion">
+        <a href="nuevoUsuario.html"
+          ><button class="login-button">
+            <i class="fas fa-user-plus"></i>Registrarse
+          </button></a
+        >
+        <a href="login.html"
+          ><button class="login-button">
+            <i class="fas fa-sign-in-alt"></i>Iniciar Sesión
+          </button></a
+        >
+      </div>
+      <div class="left-section">
+        <div class="logo">
+          <img src="img/Logo.jpg" alt="Logo Dolamar Bikes" />
         </div>
-        <div class="left-section">
-            <div class="logo"><img src="img/Logo.jpg" alt="Logo Dolamar Bikes" ></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
-                    <li><a href="tienda.html"><i class="fas fa-store"></i>Tienda</a></li>
-                    <li><a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a></li>
-                    <li><a class="active" href="acercade.html"><i class="fas fa-info-circle"></i>Acerca de</a></li>
-                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
-                  </ul>
-            </nav>
-            <div class="social-media menu">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web"  target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
-                    <li><a href="https://www.facebook.com/DolmarBike" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+            </li>
+            <li>
+              <a href="tienda.html"><i class="fas fa-store"></i>Tienda</a>
+            </li>
+            <li>
+              <a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a>
+            </li>
+            <li>
+              <a class="active" href="acercade.html"
+                ><i class="fas fa-info-circle"></i>Acerca de</a
+              >
+            </li>
+            <li>
+              <a href="carrito.html"
+                ><i class="fas fa-shopping-cart"></i>Carrito</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="social-media menu">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>
+              <a
+                href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i>WhatsApp</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/DolmarBike" target="_blank"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
 
     <div class="contenedorAcercaDe">
-        <h1 class="titulo">ACERCA DE</h1>
-        <section class="seccionAcercaDe">
-            <div class="AD">
-                <div class="textoAD">
-                    <h2 class="tituloAD">MISIÓN</h2>
-                    <p class="descripcionAD">En Dolmar Bike, estamos comprometidos con la promoción de un estilo de vida activo y sostenible a través del uso de bicicletas. Nuestra misión es proporcionar productos de alta calidad y servicios excepcionales que inspiren a las personas a redescubrir el placer de montar en bicicleta y a contribuir al cuidado del medio ambiente.</p>
-                </div>
-                <img class="imagenAD" src="img/Mision.jpg">
-            </div>
+      <h1 class="titulo">ACERCA DE</h1>
+      <section class="seccionAcercaDe">
+        <div class="AD">
+          <div class="textoAD">
+            <h2 class="tituloAD">MISIÓN</h2>
+            <p class="descripcionAD">
+              En Dolmar Bike, estamos comprometidos con la promoción de un
+              estilo de vida activo y sostenible a través del uso de bicicletas.
+              Nuestra misión es proporcionar productos de alta calidad y
+              servicios excepcionales que inspiren a las personas a redescubrir
+              el placer de montar en bicicleta y a contribuir al cuidado del
+              medio ambiente.
+            </p>
+          </div>
+          <img class="imagenAD" src="img/Mision.jpg" />
+        </div>
 
-            <div class="AD">
-                <img class="imagenAD" src="img/Nosotros.jpeg">
-                <div class="textoAD">
-                    <h2 class="tituloAD">¿QUIENES SOMOS?</h2>
-                    <p class="descripcionAD">Somos apasionados de las bicicletas y creemos en su poder para transformar vidas y comunidades. Dolmar Bike nació de nuestra dedicación a promover un estilo de vida saludable y sostenible a través del ciclismo.</p>
-                </div>
-            </div>
+        <div class="AD">
+          <img class="imagenAD" src="img/Nosotros.jpeg" />
+          <div class="textoAD">
+            <h2 class="tituloAD">¿QUIENES SOMOS?</h2>
+            <p class="descripcionAD">
+              Somos apasionados de las bicicletas y creemos en su poder para
+              transformar vidas y comunidades. Dolmar Bike nació de nuestra
+              dedicación a promover un estilo de vida saludable y sostenible a
+              través del ciclismo.
+            </p>
+          </div>
+        </div>
 
-            <div class="AD">
-                <div class="textoAD">
-                    <h2 class="tituloAD">VISIÓN</h2>
-                    <p class="descripcionAD">Nos visualizamos como líderes en la industria de bicicletas, siendo reconocidos por la calidad, innovación y compromiso. Aspiramos a ser la primera elección para aquellos que buscan soluciones de movilidad respetuosas con el medio ambiente y desean experimentar la libertad y la alegría que solo una bicicleta puede ofrecer.</p>
-                </div>
-                <img class="imagenAD" src="img/Vision.jpg">
-            </div>
-        </section>
+        <div class="AD">
+          <div class="textoAD">
+            <h2 class="tituloAD">VISIÓN</h2>
+            <p class="descripcionAD">
+              Nos visualizamos como líderes en la industria de bicicletas,
+              siendo reconocidos por la calidad, innovación y compromiso.
+              Aspiramos a ser la primera elección para aquellos que buscan
+              soluciones de movilidad respetuosas con el medio ambiente y desean
+              experimentar la libertad y la alegría que solo una bicicleta puede
+              ofrecer.
+            </p>
+          </div>
+          <img class="imagenAD" src="img/Vision.jpg" />
+        </div>
+      </section>
     </div>
-    
-
-</body>
+    <script src="JavaScript/menutoggle.js"></script>
+  </body>
 </html>

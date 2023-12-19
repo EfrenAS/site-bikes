@@ -25,10 +25,15 @@
 }
 
 .carrito{
-    width: 82%;
     float: right;
     margin: 0 auto;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+    .carrito {
+        width: 82%;
+    }
 }
 
 table {

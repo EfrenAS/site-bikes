@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul: #004AAD;
     --blanco: #fff;
     --negro: #212121;
@@ -29,7 +29,8 @@ header {
     text-align: right;
 }
 
-.login-button, .register-button {
+.login-button,
+.register-button {
     padding: 7px;
     cursor: pointer;
     font-size: 16px;
@@ -46,32 +47,42 @@ header {
 }
 
 
-.login-button:hover{
+.login-button:hover {
     border: 2px solid var(--azul);
     background-color: var(--azul);
     color: var(--blanco);
 }
 
 /* Estilos adicionales para los iconos */
-.fa-sign-in-alt, .fa-user-plus {
+.fa-sign-in-alt,
+.fa-user-plus {
     margin-right: 6px;
 }
 
 /*SECCION IZQUIERDA DE LA PAGINA*/
 
 .left-section {
-    position: fixed;
-    width: 13%;
+    display: none;
+    position: absolute;
+    width: 100%;
     float: left;
     margin: 20px;
     /*border: 2px solid red;*/
 }
 
-.logo{
+@media (min-width: 768px) {
+    .left-section {
+        display: block;
+        position: fixed;
+        width: 13%;
+    }
+}
+
+.logo {
     text-align: center;
 }
 
-.logo img{
+.logo img {
     width: 130px;
 }
 
@@ -79,6 +90,7 @@ header {
     margin-bottom: 20px;
     padding: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .menu ul {
@@ -90,10 +102,10 @@ header {
 
 .menu li {
     margin-bottom: 10px;
-    padding:10px 0;
+    padding: 10px 0;
 }
 
-.menu ul li i{
+.menu ul li i {
     margin-right: 12px;
 }
 
@@ -103,15 +115,15 @@ header {
     display: block;
 }
 
-.menu ul li a.active{
+.menu ul li a.active {
     color: var(--azul);
     /*border-right: 2px solid var(--azul);*/
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     color: var(--azul);
     border-right: 2px solid var(--azul);
-    
+
 }
 
 .social-media {
@@ -122,16 +134,22 @@ header {
 .social-media h3 {
     color: var(--naranja);
 }
+
 /*CONTENIDO PRINCIPAL*/
 
 /* ... tu código anterior ... */
 
 .main-content {
-    width: 82%;
-    float: right;
     margin: 0 auto;
     padding: 20px;
     /*border: 2px solid blue;*/
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        width: 82%;
+        float: right;
+    }
 }
 
 /* Estilos adicionales para la sección "Inicio" */
@@ -159,8 +177,21 @@ header {
     margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
-    font-size: 190px;
+    font-size: 5vh;
 }
+
+@media(min-width: 768px) {
+    .contenido-inicio h2 { 
+        font-size: 7vh;
+    }
+}
+
+ 
+@media(min-width: 1200px) {
+    .contenido-inicio h2 {
+        font-size: 15vh;       
+    }
+} 
 
 .btn {
     display: inline-block;
@@ -180,8 +211,15 @@ header {
 }
 
 @keyframes animacionBienvenida {
-    0% { transform: translateY(-20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .animacion-bienvenida {
@@ -207,7 +245,7 @@ header {
 }
 
 .SP {
-    width: 300px; 
+    width: 300px;
     margin: 18px;
 }
 
@@ -236,7 +274,8 @@ header {
 
 .descripcionSP {
     max-width: 60%;
-    font-size: 18px;;
+    font-size: 18px;
+    max-width: 400px;
     font-weight: 400;
     color: var(--negro);
     text-align: center;
@@ -249,18 +288,31 @@ header {
     margin: 50px auto;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
+@media(min-width: 992px){
+    .containerUbicacion {
+        flex-direction: row;
+    }
+    
+}
+
 iframe {
-    width: 100%;   
+    width: 100%;
 }
 
 .descripcion {
     width: 100%;
     margin-top: 130px;
-    max-width: 400px;
     line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+    .descripcion {
+        max-width: 400px;
+    }
 }
 
 h3 {
@@ -278,7 +330,7 @@ p {
 
 
 /* Estilos Pie de Pagina*/
-footer{
+footer {
     background-color: var(--negro);
     padding: 20px;
     margin-top: 20px;
@@ -289,7 +341,7 @@ footer{
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
 .CajaFooter {
@@ -297,43 +349,44 @@ footer{
     margin-bottom: 10px;
 }
 
-.titleFooter{
+.titleFooter {
     color: var(--blanco);
     text-align: center;
     margin: 5px;
 }
 
-.descrFooter{
+.descrFooter {
     color: var(--gris);
     margin: 5px;
     padding: 8px;
-    line-height: 35px; /*interlineado*/
+    line-height: 35px;
+    /*interlineado*/
 }
 
-.redesPie{
+.redesPie {
     color: var(--blanco);
     margin-top: 21px;
     text-align: center;
     font-size: 30px;
 }
 
-.redesPie a:hover{
+.redesPie a:hover {
     color: var(--blanco);
 }
 
-.Logo-piePagina img{
+.Logo-piePagina img {
     display: block;
     max-width: 200px;
     height: auto;
 }
 
-.mediosPago{
+.mediosPago {
     max-width: 25%;
     margin: 10px;
     margin-left: 50px;
 }
 
-.termPoliticas p{
+.termPoliticas p {
     margin-top: 15px;
     color: var(--blanco);
     font-size: 13px;
@@ -346,17 +399,16 @@ footer{
         margin-bottom: 20px;
         color: rgba(255, 255, 255, 0.7);
         text-transform: uppercase;
-        font-size: 140px;
     }
 
     .CajaFooter {
-        width: 48%; 
+        width: 48%;
     }
 }
 
 /* Estilos para computadora */
 @media (min-width: 1024px) {
     .CajaFooter {
-        width: 22%; 
+        width: 22%;
     }
 }

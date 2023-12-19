@@ -1,0 +1,47 @@
+/*
+*   Implementacion de un menu tipo sandwich para mostrar el menu en dispositivos moviles
+*/
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media (min-width: 768px){
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+  background-color: var(--azul);
+  height: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.change .bar-1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar-2 {
+    opacity: 0;
+  }
+  
+  .change .bar-3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+  .show-on {
+    display: block;
+    background-color: var(--blanco);
+    width: 50%;
+    left: 0;
+}
+
+/****** Finaliza implementacion de menu-toggle para movil *******/

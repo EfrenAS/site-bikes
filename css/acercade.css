@@ -13,9 +13,14 @@
 }
 
 .contenedorAcercaDe {
-    width: 82%;
     float: right;
     margin:  0 auto;
+}
+
+@media(min-width: 768px) {
+    .contenedorAcercaDe {
+        width: 82%;
+    }
 }
 
 .titulo {
@@ -29,13 +34,31 @@
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
 }
 
+@media (min-width: 992px){
+    .seccionAcercaDe {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+
 .AD{
-    width: 30%;
+    width: 80%;
     text-align: center;
 }
+
+@media(min-width: 992px) {
+    .AD {
+        width: 30%;
+    }
+}
+
 
 .AD img {
     max-width: 400px;

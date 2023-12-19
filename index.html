@@ -1,144 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Carga de Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Carga de Fonts Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Carga De CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/menu-toggle.css">
     <title>Mi Página Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="inicio-sesion">
-            <a href="nuevoUsuario.html"><button class="login-button"><i class="fas fa-user-plus"></i>Registrarse</button></a>
-            <a href="login.html"><button class="login-button"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</button></a>
+      <div class="menu-toggle">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+      <div class="inicio-sesion">
+        <a href="nuevoUsuario.html"
+          ><button class="login-button">
+            <i class="fas fa-user-plus"></i>Registrarse
+          </button></a
+        >
+        <a href="login.html"
+          ><button class="login-button">
+            <i class="fas fa-sign-in-alt"></i>Iniciar Sesión
+          </button></a
+        >
+      </div>
+      <div class="left-section">
+        <div class="logo">
+          <img src="img/Logo.jpg" alt="Logo Dolamar Bikes" />
         </div>
-        <div class="left-section">
-            <div class="logo"><img src="img/Logo.jpg" alt="Logo Dolamar Bikes" ></div>
-            <nav class="menu">
-                <ul>
-                    <li><a class="active" href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
-                    <li><a href="tienda.html"><i class="fas fa-store"></i>Tienda</a></li>
-                    <li><a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a></li>
-                    <li><a href="acercade.html"><i class="fas fa-info-circle"></i>Acerca de</a></li>
-                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i>Carrito</a></li>
-                </ul>
-            </nav>
-            <div class="social-media menu">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web"  target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
-                    <li><a href="https://www.facebook.com/DolmarBike" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="active" href="index.html"
+                ><i class="fas fa-home"></i>Inicio</a
+              >
+            </li>
+            <li>
+              <a href="tienda.html"><i class="fas fa-store"></i>Tienda</a>
+            </li>
+            <li>
+              <a href="servicio.html"><i class="fas fa-cogs"></i>Servicio</a>
+            </li>
+            <li>
+              <a href="acercade.html"
+                ><i class="fas fa-info-circle"></i>Acerca de</a
+              >
+            </li>
+            <li>
+              <a href="carrito.html"
+                ><i class="fas fa-shopping-cart"></i>Carrito</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="social-media menu">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>
+              <a
+                href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i>WhatsApp</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/DolmarBike" target="_blank"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
     <div class="main-content">
-        <!-- Tu contenido principal HTML va aquí -->
-        <section class="inicio">
-            <div class="contenido-inicio">
-                <h2 class="animacion-bienvenida">Bienvenidos</h2>
-                <a class="btn" href="tienda.html">Ver Productos</a>
-            </div>  
-        </section> <!--Inicio de Pagina-->
-        <h1 class="serviciosPrincipales">SERVICIOS PRINCIPALES</h1>
-        <hr> 
-        <section class="seccionServicioPrincipal">
-            <div class="SP">
-                <img class="imagenSP" src="img/Catalago.jpeg">
-                <div class="textoSP">
-                    <h2 class="titutloSP">Catalogo de Productos</h2>
-                    <p class="descripcionSP">Explora nuestra selección premium de bicicletas para aventuras urbanas y deportivas.</p>
-                </div>
-            </div>
+      <!-- Tu contenido principal HTML va aquí -->
+      <section class="inicio">
+        <div class="contenido-inicio">
+          <h2 class="animacion-bienvenida">Bienvenidos</h2>
+          <a class="btn" href="tienda.html">Ver Productos</a>
+        </div>
+      </section>
+      <!--Inicio de Pagina-->
+      <h1 class="serviciosPrincipales">SERVICIOS PRINCIPALES</h1>
+      <hr />
+      <section class="seccionServicioPrincipal">
+        <div class="SP">
+          <img class="imagenSP" src="img/Catalago.jpeg" />
+          <div class="textoSP">
+            <h2 class="titutloSP">Catalogo de Productos</h2>
+            <p class="descripcionSP">
+              Explora nuestra selección premium de bicicletas para aventuras
+              urbanas y deportivas.
+            </p>
+          </div>
+        </div>
 
-            <div class="SP">
-                <img class="imagenSP" src="img/Mantenimiento.jpeg">
-                <div class="textoSP">
-                    <h2 class="titutloSP">Mantenimiento de bicicletas</h2>
-                    <p class="descripcionSP">Optimiza el rendimiento y durabilidad de tu bicicleta con nuestro servicio de mantenimiento especializado.</p>
-                </div>
-            </div>
+        <div class="SP">
+          <img class="imagenSP" src="img/Mantenimiento.jpeg" />
+          <div class="textoSP">
+            <h2 class="titutloSP">Mantenimiento de bicicletas</h2>
+            <p class="descripcionSP">
+              Optimiza el rendimiento y durabilidad de tu bicicleta con nuestro
+              servicio de mantenimiento especializado.
+            </p>
+          </div>
+        </div>
 
-            <div class="SP">
-                <img class="imagenSP" src="img/EntregaDomicilo.jpg">
-                <div class="textoSP">
-                    <h2 class="titutloSP">Entrega a domicilio</h2>
-                    <p class="descripcionSP">Ofrecemos un servicio de entrega a domicilio rápido y confiable para que disfrutes de tu bicicleta sin salir de casa</p>
-                </div>
-            </div>
-        </section>
-        <!-- Ubicaciob del Dolmar Bikes -->
-        <div class="containerUbicacion">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0144580467518!2d-79.8397851249577!3d-6.76809059322864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceff3fd5422cf%3A0xb451cd98d0dbd7c3!2sDOLMAR%20BIKES!5e0!3m2!1ses!2spe!4v1700279933534!5m2!1ses!2spe" width="400" height="550" style="border: 2px solid #096fcf; border-radius: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="SP">
+          <img class="imagenSP" src="img/EntregaDomicilo.jpg" />
+          <div class="textoSP">
+            <h2 class="titutloSP">Entrega a domicilio</h2>
+            <p class="descripcionSP">
+              Ofrecemos un servicio de entrega a domicilio rápido y confiable
+              para que disfrutes de tu bicicleta sin salir de casa
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Ubicaciob del Dolmar Bikes -->
+      <div class="containerUbicacion">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0144580467518!2d-79.8397851249577!3d-6.76809059322864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceff3fd5422cf%3A0xb451cd98d0dbd7c3!2sDOLMAR%20BIKES!5e0!3m2!1ses!2spe!4v1700279933534!5m2!1ses!2spe"
+          width="400"
+          height="550"
+          style="border: 2px solid #096fcf; border-radius: 30px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
 
-            <div class="descripcion">
-                <h3>HORARIO COMERCIAL</h3>
-                <p>Atencion de Lunes a sabado de 8 am
-                    a 8 pm domingos de 9 am a 2 pm </p>
-                <h3>DIRECCION</h3>
-                    <p>Av. Pedro Ruiz 1080, Chiclayo, Peru</p>
-                <h3>HORARIO COMERCIAL</h3>
-                    <p>negociosdolmar@gmail.com</p>
-                <h3>TELEFONO</h3>  
-                    <p>979 140 052 - 979 140 051</p>
-            </div> 
-        </div> <!-- Descripcion de Ubicacion -->
+        <div class="descripcion">
+          <h3>HORARIO COMERCIAL</h3>
+          <p>
+            Atencion de Lunes a sabado de 8 am a 8 pm domingos de 9 am a 2 pm
+          </p>
+          <h3>DIRECCION</h3>
+          <p>Av. Pedro Ruiz 1080, Chiclayo, Peru</p>
+          <h3>HORARIO COMERCIAL</h3>
+          <p>negociosdolmar@gmail.com</p>
+          <h3>TELEFONO</h3>
+          <p>979 140 052 - 979 140 051</p>
+        </div>
+      </div>
+      <!-- Descripcion de Ubicacion -->
     </div>
 
     <footer>
-            <!-- PIE DE PAGINA -->
-            <section class="piePagina">
-                <div class="Logo-piePagina">
-                    <img src="img/piePagina/LogoDolmar.png" alt="LogoPie">
-                    <div class="redesPie">
-                        <a href="https://www.facebook.com/DolmarBike" class="icono-red-social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web" target="_blank" class="icono-red-social"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="icono-red-social"><i class="fab fa-instagram"></i></a>
-                    </div>        
-                </div>
-        
-                <div class="CajaFooter">
-                    <h2 class="titleFooter">DIRECCION</h2>
-                    <p class="descrFooter"> Av. Pedro Ruiz 1080, Chiclayo, Peru <br>
-                        negociosdolmar@gmail.com <br>
-                        979 140 052 - 979 140 051 <br>
-                        Atencion de Lunes a sabado de 8 am a 8 pm domingos de 9 am a 2 pm <br>
-                    </p>
-                </div>
-        
-                <div class="CajaFooter">
-                    <h2 class="titleFooter">CATEGORIAS</h2>
-                    <p class="descrFooter"> Bicicletas Montañeras <br>
-                        Biciletas BMX <br>
-                        Bicicletas Camperas <br>
-                        Bicicletas Urbanas <br>
-                        Accesorios para Ciclista <br>
-                        Accesorios de Bicicleta <br>
-                    </p>
-                </div>
-                
-                <div class="CajaFooter">
-                    <h2 class="titleFooter">MEDIOS DE PAGO</h2>
-                    <img class="mediosPago" src="img/piePagina/LogoBCP.png" alt="BCP">
-                    <img class="mediosPago" src="img/piePagina/LogoInterbank.png" alt="Interbank">
-                    <img class="mediosPago" src="img/piePagina/LogoBancoNacion.jpg" alt="Banco Nación">
-                    <img class="mediosPago" src="img/piePagina/LogoBBVA.jpg" alt="BBVA">
-                    <img class="mediosPago" src="img/piePagina/LogoVisaMaster.png" alt="MasterCard">
-                    <img class="mediosPago" src="img/piePagina/Yape-Pli.png" alt="Yape-Plin">
-                </div>
-            </section>
-            <div class="termPoliticas">
-                <p>Politicas de Privacidad - Terminos y Condiciones <br>
-                Copyright Todos los derechos reservados Dolmar Bikes</p>
-            </div>
-        </footer>
-</body>
+      <!-- PIE DE PAGINA -->
+      <section class="piePagina">
+        <div class="Logo-piePagina">
+          <img src="img/piePagina/LogoDolmar.png" alt="LogoPie" />
+          <div class="redesPie">
+            <a
+              href="https://www.facebook.com/DolmarBike"
+              class="icono-red-social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://wa.me/51979140052?text=Hola%20desde%20mi%20sitio%20web"
+              target="_blank"
+              class="icono-red-social"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#" class="icono-red-social"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="CajaFooter">
+          <h2 class="titleFooter">DIRECCION</h2>
+          <p class="descrFooter">
+            Av. Pedro Ruiz 1080, Chiclayo, Peru <br />
+            negociosdolmar@gmail.com <br />
+            979 140 052 - 979 140 051 <br />
+            Atencion de Lunes a sabado de 8 am a 8 pm domingos de 9 am a 2 pm
+            <br />
+          </p>
+        </div>
+
+        <div class="CajaFooter">
+          <h2 class="titleFooter">CATEGORIAS</h2>
+          <p class="descrFooter">
+            Bicicletas Montañeras <br />
+            Biciletas BMX <br />
+            Bicicletas Camperas <br />
+            Bicicletas Urbanas <br />
+            Accesorios para Ciclista <br />
+            Accesorios de Bicicleta <br />
+          </p>
+        </div>
+
+        <div class="CajaFooter">
+          <h2 class="titleFooter">MEDIOS DE PAGO</h2>
+          <img class="mediosPago" src="img/piePagina/LogoBCP.png" alt="BCP" />
+          <img
+            class="mediosPago"
+            src="img/piePagina/LogoInterbank.png"
+            alt="Interbank"
+          />
+          <img
+            class="mediosPago"
+            src="img/piePagina/LogoBancoNacion.jpg"
+            alt="Banco Nación"
+          />
+          <img class="mediosPago" src="img/piePagina/LogoBBVA.jpg" alt="BBVA" />
+          <img
+            class="mediosPago"
+            src="img/piePagina/LogoVisaMaster.png"
+            alt="MasterCard"
+          />
+          <img
+            class="mediosPago"
+            src="img/piePagina/Yape-Pli.png"
+            alt="Yape-Plin"
+          />
+        </div>
+      </section>
+      <div class="termPoliticas">
+        <p>
+          Politicas de Privacidad - Terminos y Condiciones <br />
+          Copyright Todos los derechos reservados Dolmar Bikes
+        </p>
+      </div>
+    </footer>
+    <script src="JavaScript/menutoggle.js"></script>
+  </body>
 </html>
